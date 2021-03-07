@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Sign Up</h1>
+        <form action="result.html" method="get">
+            <div class="bigbox">
+                <fieldset>
+                    <legend>Your Basic Info</legend>
+                    <div class="littlebox">
+                        <label for="name">Name:</label>
+                        <br>
+                        <input id="name" type="text" name="Name">
+                        <br><br>
+                    </div>
+                    <div class="littlebox">
+                        <label for="mail">Email:</label>
+                        <br>
+                        <input id="mail" type="email" name="Email">
+                        <br><br>
+                    </div>
+                    <div class="littlebox">
+                        <label for="pass">Password:</label>
+                        <br>
+                        <input id="pass" type="password" name="Password">
+                        <br><br>
+                    </div>
+                    <div class="littlebox">
+                        <label>Age:</label>
+                        <br>
+                        <input id="age1" type="radio" name="Age" value="under 13">
+                        <label for="age1">Under 13</label>
+                        <br>
+                        <input id="age2" type="radio" name="Age" value="over 13">
+                        <label for="age2">Over 13</label>
+                    </div>
+                </fieldset>
+                <br>
+            </div>
+            <div class="bigbox">
+                <fieldset>
+                    <legend>Your Profile</legend>
+                    <div class="littlebox">
+                        <label for="bio">Bio:</label>
+                        <br>
+                        <textarea id="bio" name="Bio" cols="30" rows="5"></textarea>
+                        <br><br>
+                    </div>
+                    <div class="littlebox">
+                        <label for="job">Job Role:</label>
+                        <br>
+                        <select id="job" name="Job">
+                            <optgroup label="Web">
+                                <option value="front-end developer">Front-End Developer</option>
+                                <option value="js developer">JS Developer</option>
+                                <option value="python developer">Python Developer</option>
+                                <option value="django developer">Django Developer</option>
+                                <option value="wordpress developer">Wordpress Developer</option>
+                            </optgroup>
+                            <optgroup label="Mobile">
+                                <option value="android developer">Android Developer</option>
+                                <option value="ios developer">IOS Developer</option>
+                                <option value="mobile designer">Mobile Designer</option>
+                            </optgroup>
+                            <optgroup label="Business">
+                                <option value="business owner">Business Owner</option>
+                                <option value="freelancer">Freelancer</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                    </div>
+                    <div class="littlebox">
+                        <label>Interests:</label>
+                        <br>
+                        <input id="interest1" type="checkbox" name="Interest" value="development">
+                        <label for="interest1">Development</label>
+                        <br>
+                        <input id="interest2" type="checkbox" name="Interest" value="design">
+                        <label for="interest2">Design</label>
+                        <br>
+                        <input id="interest3" type="checkbox" name="Interest" value="business">
+                        <label for="interest3">Business</label>
+                    </div>
+                </fieldset>
+                <br>
+            </div>
+            <div id="click">
+                <input type="submit" value="Sign Up">
+            </div>                 
+        </form>
+    </div>
+</body>
+</html>
